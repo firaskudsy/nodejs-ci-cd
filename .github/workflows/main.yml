@@ -28,7 +28,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - name: Deploy to Firebase
-      uses: BIGG-Kaymo/deploy-firebase-functions@v1.0.1
+    - uses: jsryudev/deploy-firebase-functions@v0.0.2
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_PROJECT: firebase-project-id
