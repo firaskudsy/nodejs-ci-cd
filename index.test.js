@@ -1,8 +1,8 @@
-const app = require("./index")
+const app = require("./app")
 const supertest = require("supertest")
 const request = supertest(app)
 
-describe("/test index.js", () => {
+describe("/test endpoint", () => {
     it("should return a response", async () => {
         const response = await request.get("/test")
         expect(response.status).toBe(200)
