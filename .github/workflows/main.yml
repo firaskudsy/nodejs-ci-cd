@@ -31,4 +31,4 @@ jobs:
     - uses: jsryudev/deploy-firebase-functions@v0.0.2
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        FIREBASE_PROJECT: nodejs-ci-cd
+        FIREBASE_PROJECT: nodejs-ci-cd-7927a
